@@ -3,7 +3,7 @@ class StringBuilder {
     
 
     constructor(initialValue) {
-        this.#value = initialValue;
+        this.#value = initialValue.value;
     }
 
     getValue() {
@@ -12,12 +12,12 @@ class StringBuilder {
     
 
     padStart(str) {
-        return this.#value.unshift(str);
+        return this.#value;
     }
     
     
     padEnd(str) {
-        return this.#value.push(str);
+        return this.#value
     }
    
     padBoth(str) {
